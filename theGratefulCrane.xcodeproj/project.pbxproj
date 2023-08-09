@@ -13,10 +13,11 @@
 		2D7D481A2A6FDF8D007FFF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D48182A6FDF8D007FFF34 /* Main.storyboard */; };
 		2D7D481C2A6FDF8F007FFF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D481B2A6FDF8F007FFF34 /* Assets.xcassets */; };
 		2D7D481F2A6FDF8F007FFF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D481D2A6FDF8F007FFF34 /* LaunchScreen.storyboard */; };
+		2D7D48272A6FFF47007FFF34 /* crayon_1-1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D48262A6FFF47007FFF34 /* crayon_1-1.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D7D480F2A6FDF8D007FFF34 /* theGratefulCrane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theGratefulCrane.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7D480F2A6FDF8D007FFF34 /* TheGratefulCrane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGratefulCrane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7D48122A6FDF8D007FFF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D7D48142A6FDF8D007FFF34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2D7D48162A6FDF8D007FFF34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		2D7D481B2A6FDF8F007FFF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D7D481E2A6FDF8F007FFF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D7D48202A6FDF8F007FFF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7D48262A6FFF47007FFF34 /* crayon_1-1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crayon_1-1.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,7 @@
 		2D7D48062A6FDF8D007FFF34 = {
 			isa = PBXGroup;
 			children = (
-				2D7D48112A6FDF8D007FFF34 /* theGratefulCrane */,
+				2D7D48112A6FDF8D007FFF34 /* TheGratefulCrane */,
 				2D7D48102A6FDF8D007FFF34 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +50,12 @@
 		2D7D48102A6FDF8D007FFF34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D7D480F2A6FDF8D007FFF34 /* theGratefulCrane.app */,
+				2D7D480F2A6FDF8D007FFF34 /* TheGratefulCrane.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D7D48112A6FDF8D007FFF34 /* theGratefulCrane */ = {
+		2D7D48112A6FDF8D007FFF34 /* TheGratefulCrane */ = {
 			isa = PBXGroup;
 			children = (
 				2D7D48122A6FDF8D007FFF34 /* AppDelegate.swift */,
@@ -62,17 +64,18 @@
 				2D7D48182A6FDF8D007FFF34 /* Main.storyboard */,
 				2D7D481B2A6FDF8F007FFF34 /* Assets.xcassets */,
 				2D7D481D2A6FDF8F007FFF34 /* LaunchScreen.storyboard */,
+				2D7D48262A6FFF47007FFF34 /* crayon_1-1.ttf */,
 				2D7D48202A6FDF8F007FFF34 /* Info.plist */,
 			);
-			path = theGratefulCrane;
+			path = TheGratefulCrane;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D7D480E2A6FDF8D007FFF34 /* theGratefulCrane */ = {
+		2D7D480E2A6FDF8D007FFF34 /* TheGratefulCrane */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D7D48232A6FDF8F007FFF34 /* Build configuration list for PBXNativeTarget "theGratefulCrane" */;
+			buildConfigurationList = 2D7D48232A6FDF8F007FFF34 /* Build configuration list for PBXNativeTarget "TheGratefulCrane" */;
 			buildPhases = (
 				2D7D480B2A6FDF8D007FFF34 /* Sources */,
 				2D7D480C2A6FDF8D007FFF34 /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = theGratefulCrane;
+			name = TheGratefulCrane;
 			productName = theGratefulCrane;
-			productReference = 2D7D480F2A6FDF8D007FFF34 /* theGratefulCrane.app */;
+			productReference = 2D7D480F2A6FDF8D007FFF34 /* TheGratefulCrane.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D7D480A2A6FDF8D007FFF34 /* Build configuration list for PBXProject "theGratefulCrane" */;
+			buildConfigurationList = 2D7D480A2A6FDF8D007FFF34 /* Build configuration list for PBXProject "TheGratefulCrane" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D7D480E2A6FDF8D007FFF34 /* theGratefulCrane */,
+				2D7D480E2A6FDF8D007FFF34 /* TheGratefulCrane */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7D48272A6FFF47007FFF34 /* crayon_1-1.ttf in Resources */,
 				2D7D481F2A6FDF8F007FFF34 /* LaunchScreen.storyboard in Resources */,
 				2D7D481C2A6FDF8F007FFF34 /* Assets.xcassets in Resources */,
 				2D7D481A2A6FDF8D007FFF34 /* Main.storyboard in Resources */,
@@ -218,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -299,6 +303,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +331,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D7D480A2A6FDF8D007FFF34 /* Build configuration list for PBXProject "theGratefulCrane" */ = {
+		2D7D480A2A6FDF8D007FFF34 /* Build configuration list for PBXProject "TheGratefulCrane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D7D48212A6FDF8F007FFF34 /* Debug */,
@@ -351,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D7D48232A6FDF8F007FFF34 /* Build configuration list for PBXNativeTarget "theGratefulCrane" */ = {
+		2D7D48232A6FDF8F007FFF34 /* Build configuration list for PBXNativeTarget "TheGratefulCrane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D7D48242A6FDF8F007FFF34 /* Debug */,

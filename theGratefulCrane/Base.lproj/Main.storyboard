@@ -1,24 +1,1846 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22138.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vui-uY-dZG">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22113"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="crayon_1-1.ttf">
+            <string>Nagurigaki-Crayon</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cgQ-1r-OrV">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vui-uY-dZG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1DQ-5y-6IV">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="AccentColor"/>
+                        <tabBarAppearance key="standardAppearance"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="blp-5h-Ulc" kind="relationship" relationship="viewControllers" id="S9h-Ng-dR1"/>
+                        <segue destination="XwV-Ks-wqI" kind="relationship" relationship="viewControllers" id="p3s-WG-IL2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQX-Mo-Nhu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1250" y="-35"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="e57-CY-IDB">
+            <objects>
+                <tableViewController id="Uso-od-Xsc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" id="b8L-1d-aZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <sections>
+                            <tableViewSection id="y9z-LT-3xF">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="kih-5h-nkg">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kih-5h-nkg" id="8Yv-mK-QtZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phr-9j-KPQ">
+                                                    <rect key="frame" x="39" y="37" width="94" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="白鶴報恩"/>
+                                                    <connections>
+                                                        <segue destination="tkv-gs-v4S" kind="show" id="PAo-LB-zG5"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="100" id="4R1-9l-HuU">
+                                        <rect key="frame" x="0.0" y="150" width="393" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4R1-9l-HuU" id="AOm-Lf-iTO">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSf-VO-yda">
+                                                    <rect key="frame" x="34" y="33" width="163" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="戴斗笠的地藏菩薩"/>
+                                                    <connections>
+                                                        <segue destination="F3d-Vo-qts" kind="show" id="dlO-m3-c2q"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Uso-od-Xsc" id="oKE-Gg-WHm"/>
+                            <outlet property="delegate" destination="Uso-od-Xsc" id="GEB-3B-KBw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="pp0-lh-p6O"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kd3-fB-E6u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133.5877862595421" y="-11.267605633802818"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="lIr-hZ-N6e">
+            <objects>
+                <tableViewController id="Vpa-5d-ix7" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" id="frX-0c-Mqz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <sections>
+                            <tableViewSection id="eYM-H7-a5O">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="d2B-bw-4I7">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d2B-bw-4I7" id="6NH-nY-ifP">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkg-IS-rjM">
+                                                    <rect key="frame" x="31" y="37" width="111" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="鶴の恩返し"/>
+                                                    <connections>
+                                                        <segue destination="DMb-ib-ieU" kind="show" id="7dP-ag-Acg"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="100" id="sP3-cx-6Xt">
+                                        <rect key="frame" x="0.0" y="150" width="393" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sP3-cx-6Xt" id="Gn7-3b-QRc">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHU-iO-t8B">
+                                                    <rect key="frame" x="34" y="33" width="111" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="かさじぞう"/>
+                                                    <connections>
+                                                        <segue destination="zBL-Ih-obm" kind="show" id="GI2-ZB-myx"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Vpa-5d-ix7" id="oRZ-2H-alO"/>
+                            <outlet property="delegate" destination="Vpa-5d-ix7" id="qtl-4K-KNL"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="t2r-JX-jyA"/>
+                    <navigationItem key="navigationItem" id="9Ow-Ky-meJ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4i-XF-ops" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2066" y="759"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIo-SP-j3J" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="338" width="393" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="Uso-od-Xsc" kind="show" id="ZMf-us-ehq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="JsC-YN-0Mw">
+                                <rect key="frame" x="-7" y="162" width="407" height="733"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日本童話" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gO-2M-5q1">
+                                <rect key="frame" x="44" y="162" width="304" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="76"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ee4-Tq-KbJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1089" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="re4-pz-hMK">
+            <objects>
+                <viewController id="tkv-gs-v4S" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pNd-Wx-rDS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSS-BY-09P" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="241" width="393" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="HdB-du-FqY" kind="show" id="bHH-gt-F96"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluebird_fired" translatesAutoresizingMaskIntoConstraints="NO" id="5yc-U6-5ow">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oj9-Sg-wVJ">
+                                <rect key="frame" x="39" y="-74" width="300" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">從前從前，住著一對貧窮卻心地善良的老爺爺和老奶奶。
+在一個寒冷的冬天，老爺爺出門到鎮上去賣木柴。
+途中，老爺爺在一個稻田上發現卡在陷阱裡的白鶴正在掙扎著。  「哎呀、真可憐哪。」
+老爺爺覺得白鶴很可憐，於是就幫忙放走了白鶴。
+白鶴在老爺爺的頭上飛轉了三圈，
+「嗷嗚、嗷嗚、嗷嗚」地高興地叫了幾聲，接著便飛走了。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://www.sigure.tw/learn-japanese/reading/fairy-tale/tsuru-no-ongaeshi.php" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xh0-56-ck9" userLabel="參考連結URL">
+                                <rect key="frame" x="254" y="650" width="85" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="參考連結" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrm-13-VKy">
+                                <rect key="frame" x="254" y="662" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BlK-La-o7R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mc4-Hu-e5E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9no-vQ-2IY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3541.2213740458014" y="-35.211267605633807"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mqK-iX-lMJ">
+            <objects>
+                <viewController id="HdB-du-FqY" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cNh-KW-TtV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfq-CH-cUj" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="GaH-kF-U7n" kind="show" id="6pH-P6-fhl"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="WLg-bv-T28">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PG9-g1-Svl">
+                                <rect key="frame" x="46.130607498576637" y="-73.989741360585413" width="300" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">那一夜，從傍晚開始下起的雪已經積成了大雪。
+老爺爺把自己救起白鶴的事講給了老奶奶聽。
+這時候外面的大門傳來咚咚咚的敲門聲。
+「請問有人在嗎？請開門。」
+是一個年輕女人的聲音。  老奶奶打開了門，看見一身是雪的小姑娘。
+老奶奶嚇了一跳。
+「哎呀，妳一定很冷吧。來，快進來吧。」
+老奶奶這麼說，並讓小姑娘進來。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gf2-I3-2cO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jYx-gr-cAd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mi-8F-6I2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4246.5648854961828" y="-35.211267605633807"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nYH-Gb-pTP">
+            <objects>
+                <viewController id="GaH-kF-U7n" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kOm-WO-lKd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPq-z1-BvD" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="kva-tM-q2b" kind="show" id="V6Y-9L-eO4"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="YTh-BM-yXP">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqq-7i-eSH">
+                                <rect key="frame" x="46.000000000015916" y="-72.837095601847295" width="300" height="1000.0000000002271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">「我是來這附近拜訪一個人的，但怎麼找都找不到，
+又下了雪，天也黑了，好不容易才走到這裡，
+不知道會不會給您帶來了麻煩，希望您能收留我一晚。」
+小姑娘恭恭敬敬地兩手扶地拜託著老奶奶。  「哎呀，妳一定很傷腦筋吧。如果你不嫌棄這種地方，還請在這裡住下。」
+「謝謝您。」
+小姑娘很高興，那一晚她幫忙煮飯等家事之後便休息了。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qjo-GR-ajD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4e7-Y6-tZh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vny-tP-Stu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4915.2671755725187" y="-27.464788732394368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ces-0v-Gd4">
+            <objects>
+                <viewController id="kva-tM-q2b" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mfH-GB-seB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCl-9m-0dv" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="w8t-8V-blt" kind="show" id="nl5-1c-bkN"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="CoH-ax-TdD">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8d-4t-b0D">
+                                <rect key="frame" x="46.000000000015461" y="-73.822505700291913" width="300.00000000027239" height="1000.0000000002271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">隔天早上，老奶奶醒來後發現小姑娘已經起床並且正在幫忙家務。
+爐子正在燒火，鍋子冒著白煙。
+不僅如此，家裡還打掃得很乾淨。  「哎呀，不只是做飯，還幫忙打掃家裡呀。真謝謝妳呀。」
+隔天依然下著大雪，再隔了一天還是下著大雪，連門都沒有辦法打開。
+小姑娘幫老爺爺按摩了肩膀。
+「噢，多麼能幹的小姑娘啊。多麼地體貼溫柔啊。如果家裡有這麼樣的一個小姑娘，那該多高興啊。」
+老爺爺和老奶奶對望了一眼。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vGC-87-hwA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="50s-W5-Arf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZ6-Sb-hKF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5579.3893129770986" y="24.647887323943664"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qUN-aW-gVZ">
+            <objects>
+                <viewController id="w8t-8V-blt" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s2o-pI-4da">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geH-2Y-wtS" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="QbY-lT-flq" kind="show" id="qAX-2U-DSi"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="IRS-AQ-1AS">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUZ-lR-ZDf">
+                                <rect key="frame" x="45.999999999974534" y="-72.837095601617875" width="299.99999999972761" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">這時候小姑娘兩手扶地請求兩老：
+「我是一個無依無靠的女兒家，請收留我吧。」
+「哦哦」
+「好呀」
+老爺爺和老奶奶非常高興，雖然貧窮，但三人每天都過著幸福的日子。  有一天。
+小姑娘想要織布，她請老爺爺幫她買線回來。
+老爺爺買線回來之後，小姑娘便在織布機周圍豎起屏風，
+「在我完成織布之前，請絕對不要偷看。」
+小姑娘說完便開始織布了。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Kr-cY-EFL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aY4-LP-Gsz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rrm-Pj-QTN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6240.4580152671751" y="-11.267605633802818"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uSL-TC-OIP">
+            <objects>
+                <viewController id="QbY-lT-flq" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c6t-fF-rdu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="rFr-Iw-V7r">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20W-1K-IIc" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="e24-KV-YDD" kind="show" id="1jd-da-C45"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGH-XO-sOs">
+                                <rect key="frame" x="45.999999999994088" y="-71.735830605607589" width="299.99999999999955" height="1000.0000000000005"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">喀啦喀啦、喀啦喀啦，
+小姑娘織著布，就這樣過了三天。
+終於，小姑娘織完了布。
+「老爺爺，老奶奶，請將這匹綾羅綢緞拿到鎮上去賣，回來時請再幫我買線。」
+小姑娘說完便將如雲般輕巧的美麗綢緞給兩老看。  「這東西，實在好極了。」
+老爺爺一到鎮上去賣，一個身分高貴的老爺子便用高價錢買了下來。
+老爺爺非常歡喜，買了線回來了。
+於是小姑娘又開始織布了。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E76-eY-f6F"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CdE-d7-srP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O6h-Vi-71r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6965.6488549618316" y="-35.211267605633807"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WAo-lq-jfT">
+            <objects>
+                <viewController id="e24-KV-YDD" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vuZ-cm-ZYQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6d-bU-lxr" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="IH1-pi-YHs" kind="show" id="gAn-bb-5hp"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="Y6p-Ha-HkM">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iL4-sf-RER">
+                                <rect key="frame" x="45.999999999993634" y="-73.286864709286874" width="300.00000000000045" height="1000.0000000000005"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">「吶、老伴啊。那個小姑娘到底是怎麼織出那麼漂亮的布呀……稍微偷看一下吧。」 
+老奶奶透過屏風的縫隙偷偷窺探了一眼，發現在那裡的不是小姑娘，而是一隻枯瘦如柴的白鶴正在用長長的鳥喙拔下自己的羽毛，混著線一起織布。  「老伴、老伴呀」
+嚇到的老奶奶向老爺爺說了這事。
+喀啦喀啦、喀啦喀啦……。
+織布聲停止了。小姑娘抱著布走了出來，身體比之前更瘦小了。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DQT-sJ-Mz5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cMj-CP-6j4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qev-FR-naR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7689.3129770992364" y="-30.281690140845072"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ODf-J3-bvR">
+            <objects>
+                <viewController id="IH1-pi-YHs" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9vx-Q4-QzS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RQ-OQ-JV4" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="jwD-7u-nWq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="74b-9c-jvK">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0j-H7-H3C">
+                                <rect key="frame" x="45.999999999974648" y="-77.833448126213852" width="299.99999999972749" height="999.99999999977285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">「老爺爺，老奶奶。看樣子再藏也無濟於事。
+我是曾經被救起的白鶴。
+為了報恩才化身為小姑娘。
+不過，該是離別的時候了。
+請保重身體。」   話一說完，她不理會老爺爺和老奶奶的挽留，轉眼間就變成一隻白鶴飛上了天空。
+接著在房子的上空飛轉了三圈，
+「嗷嗚、嗷嗚、嗷嗚」
+一邊鳴叫，一邊往山的另一頭飛去了。  「白鶴啊，不、小姑娘啊，妳也要保重身體啊……一直以來，謝謝妳了。」
+老爺爺和老奶奶就這樣目送白鶴離去。
+在那之後，兩老用小姑娘織的布所賺來的錢過著幸福快樂的日子。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://www.sigure.tw/learn-japanese/reading/fairy-tale/tsuru-no-ongaeshi.php" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jL9-Jg-jaq" userLabel="參考連結URL">
+                                <rect key="frame" x="248" y="732" width="85" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="參考連結" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zg-Hk-orN">
+                                <rect key="frame" x="248" y="744" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z4A-tg-0Y2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zRe-Z9-Eeb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jwc-Iq-kub" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8333.5877862595426" y="-30.281690140845072"/>
+        </scene>
+        <!--中文故事-->
+        <scene sceneID="r88-Cu-o3Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="blp-5h-Ulc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="中文故事" image="doc.on.clipboard.fill" catalog="system" id="H3Z-pZ-M0n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J4l-Aq-UMS">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JdO-ng-BuE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LOv-Ys-UVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149" y="-30"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F92-Px-m5a">
+            <objects>
+                <viewController id="RGp-7K-teM" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pg2-ed-oHo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfq-DC-fIQ" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="338" width="393" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="Vpa-5d-ix7" kind="show" id="QKe-FX-fYV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ojiisan_obaasan" translatesAutoresizingMaskIntoConstraints="NO" id="o6m-S9-G8Q">
+                                <rect key="frame" x="-7" y="162" width="407" height="733"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日本昔話" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS9-LH-hnm">
+                                <rect key="frame" x="44" y="162" width="304" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="76"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wp9-6W-bKa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aoj-zR-r8E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJN-E2-Hqg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176.3358778625955" y="743.66197183098598"/>
+        </scene>
+        <!--日文故事-->
+        <scene sceneID="eIK-EQ-HI2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XwV-Ks-wqI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="日文故事" image="doc.text" catalog="system" id="X2h-LI-c5D"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="12R-o6-aHQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RGp-7K-teM" kind="relationship" relationship="rootViewController" id="wSu-Wg-zqf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q0W-II-HQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249.61832061068702" y="743.66197183098598"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r8N-dz-FNW">
+            <objects>
+                <viewController id="F3d-Vo-qts" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="891-Wv-cPn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssZ-yg-Tld" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="241" width="393" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="REI-Tl-ffW" kind="show" id="hsQ-ta-Eow"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monogatari_kasajizou" translatesAutoresizingMaskIntoConstraints="NO" id="y9i-eU-iIJ">
+                                <rect key="frame" x="0.0" y="-250" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVF-ge-DTj">
+                                <rect key="frame" x="39" y="-74" width="300" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">從前從前，在某個地方，有一對貧窮但是心地善良的老公公和老婆婆。
+
+　在某一年的除夕夜。
+
+  老公公和老婆婆製作了斗笠，
+
+  打算拿到鎮上去賣，用得到的錢去買新年的年糕。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="http://hukumusume.com/douwa/english/jap/12/31_T.htm" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jzk-S6-LUF" userLabel="參考連結URL">
+                                <rect key="frame" x="254" y="650" width="85" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="參考連結" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysi-QG-LHC">
+                                <rect key="frame" x="254" y="662" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="og3-RW-r2P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4zQ-MF-aiQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nMA-yr-Hbi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3630" y="797"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mYn-d8-P6k">
+            <objects>
+                <viewController id="REI-Tl-ffW" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KoQ-ic-xZF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-3r-QI4" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="pmG-Ro-qZh" kind="show" id="BtN-AX-VmV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="FGJ-1E-tOZ">
+                                <rect key="frame" x="0.0" y="0.0" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sj8-ce-gVY">
+                                <rect key="frame" x="46" y="-74" width="300" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">「有五頂斗笠，應該夠買年糕吧」
+
+「路上小心喔，今晚會開始下雪，請特別小心注意喔」
+
+　老公公拿了五頂斗笠，出了家門。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1jU-ou-dxI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="blr-84-HKe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TmW-Di-pjD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4337" y="797"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Np4-Hn-hrc">
+            <objects>
+                <viewController id="pmG-Ro-qZh" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ZK-W1-3cj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxw-ez-hdm" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="Fu3-mO-ZU6" kind="show" id="0oe-8a-ajt"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="N1Q-31-bWi">
+                                <rect key="frame" x="17" y="26" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZN-Ww-NCv">
+                                <rect key="frame" x="46.000000000015916" y="-72.837095601847295" width="300" height="1000.0000000002271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">出門後不久，天空下起雪來。
+
+　由於雪愈下愈大，老公公急急忙忙地趕路。
+
+　當他快來到鎮上時，看到路邊有六尊地藏站立著。」
+
+　地藏的頭和肩膀，都積滿了雪。
+
+　老公公看到這般情景，無法忍心視而不見走過去。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eq3-pv-sa8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vdF-PU-dnn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jba-Dq-PcN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5004" y="805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PKb-YE-dtc">
+            <objects>
+                <viewController id="Fu3-mO-ZU6" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O8K-Eg-tf0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20i-hb-TKc" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="IqZ-E3-lc8" kind="show" id="jRP-Tn-MOK"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="yIN-iV-VUb">
+                                <rect key="frame" x="17" y="26" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAh-1H-Yxm">
+                                <rect key="frame" x="46.000000000015461" y="-73.822505700291913" width="300.00000000027239" height="1000.0000000002271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">「地藏王菩薩，下這麼大的雪，想必您一定很冷吧，那麼請至少戴上這些斗笠吧」
+
+　老公公將原本要拿去賣的斗笠，全部戴在地藏的頭上。
+
+　但是，一共有六尊地藏，但是卻只有五頂斗笠。
+
+　於是老公公脫下自己的斗笠，戴在最後一尊地藏王的頭上。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YCM-Kb-LvV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K3c-1H-me4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nh7-Xo-Qzy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5668" y="804"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AP4-J4-XfU">
+            <objects>
+                <viewController id="IqZ-E3-lc8" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rwh-p9-9aR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgx-2E-Bh8" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="4X9-E9-Nms" kind="show" id="NxH-ng-cY7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="HuU-fT-HXv">
+                                <rect key="frame" x="17" y="26" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DT-5r-akQ">
+                                <rect key="frame" x="45.999999999974534" y="-72.837095601617875" width="299.99999999972761" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">
+　回到家後，老婆婆嚇了一跳，說：
+
+「哎呀，這麼早就回來了啊，對了，你手上的斗笠賣完了嗎？」
+
+　老公公講地藏的事情說給老婆婆聽。
+
+「沒關係，你做了好事呢，年糕什麼的，就算沒有也沒關係的」
+
+　老婆婆滿臉微笑地說。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wq3-fk-QyY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fMG-YB-IKI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dm5-1L-m7r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6329" y="821"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="43t-15-qSX">
+            <objects>
+                <viewController id="4X9-E9-Nms" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t8R-Vb-nMU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arg-vu-UKr" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="7Qv-KS-G3I" kind="show" id="QCw-x4-SE4"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="3R9-e0-2nX">
+                                <rect key="frame" x="17" y="26" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euR-Rk-TOn">
+                                <rect key="frame" x="45.999999999994088" y="-71.735830605607589" width="299.99999999999955" height="1000.0000000000005"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">當天晚上，明明已經是半夜，附近卻傳來不可思議的歌聲。
+
+老公公的家在哪裡呢？
+
+我們送來報答斗笠的禮物囉！
+
+老公公的家在哪裡呢？
+
+我們送來報答斗笠的禮物囉！
+
+　歌聲愈來愈近，逐漸到了老公公的家門前，
+
+　 咚 ！ ！
+
+　門外傳來東西放在地上的聲音，之後外面一片寂靜。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6jN-FY-en7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0iQ-fv-TJv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHh-hM-3SZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7056" y="821"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ncy-W1-yoy">
+            <objects>
+                <viewController id="7Qv-KS-G3I" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8s3-ms-crc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6C7-LN-oWA" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="oH5-Qa-2vm"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="fg3-Rh-c02">
+                                <rect key="frame" x="17" y="200" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85r-CE-iNl">
+                                <rect key="frame" x="46" y="-84" width="300.00000000000045" height="1000.0000000000005"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">老公公打開門一看，只看到戴著老公公斗笠的地藏背影。
+
+　在家門前，則擺放著堆積如山的年糕和年節禮品。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://www.sigure.tw/learn-japanese/reading/fairy-tale/tsuru-no-ongaeshi.php" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z7C-Ar-ijx" userLabel="參考連結URL">
+                                <rect key="frame" x="231" y="727" width="85" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="參考連結" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEE-Us-50X">
+                                <rect key="frame" x="231" y="750" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LYx-Hx-vg0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="esK-dN-jPW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVg-Yn-j1o" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7778" y="802"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aJc-Fi-mwd">
+            <objects>
+                <viewController id="DMb-ib-ieU" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EQ1-DW-2T5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnF-0h-ZdZ" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="241" width="393" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="048-PL-lMf" kind="show" id="8B2-DL-FfB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluebird_fired" translatesAutoresizingMaskIntoConstraints="NO" id="jc5-H1-BNB">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dih-2E-IrM">
+                                <rect key="frame" x="39" y="-74" width="300" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">むかしむかし、貧しいけれど、心の優しいおじいさんとおばあさんがいました。
+ある寒い冬の日、おじいさんは町へたきぎを売りに出かけました。
+すると途中の田んぼの中で、一羽のツルがワナにかかってもがいていたのです。
+
+「おお、おお、可哀そうに」
+おじいさんは可哀そうに思って、ツルを逃がしてやりました。
+するとツルは、おじいさんの頭の上を三ベん回って、
+「カウ、カウ、カウ」と、さもうれしそうに鳴いて、飛んで行きました。
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://www.sigure.tw/learn-japanese/reading/fairy-tale/tsuru-no-ongaeshi.php" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pDu-ci-cup" userLabel="參考連結URL">
+                                <rect key="frame" x="254" y="650" width="85" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="參考連結" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loL-qJ-yFX">
+                                <rect key="frame" x="254" y="662" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q2P-zO-vUf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="I3F-HJ-wym"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5p-2e-fHL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3541" y="1518"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0is-5Z-Xa4">
+            <objects>
+                <viewController id="048-PL-lMf" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Za-HE-rH0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORC-MD-poF" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="x1I-nY-V88" kind="show" id="XV6-rj-AK5"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="b4c-eb-ymq">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40D-HK-PBo">
+                                <rect key="frame" x="46.130607498576637" y="-73.989741360585413" width="300" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">その夜、日暮れ頃から降り始めた雪が、コンコンと積もって大雪になりました。
+おじいさんがおばあさんにツルを助けた話をしていると、表の戸を、
+トントン、トントンと、叩く音がします。
+「ごめんください。開けてくださいまし」
+若い女の人の声です。
+
+おばあさんが戸を開けると、頭から雪をかぶった娘が立っていました。
+おばあさんは驚いて、
+「まあ、まあ、寒かったでしょう。さあ、早くお入り」
+と、娘を家に入れてやりました。
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Igf-e9-pU1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pp7-hG-Eia"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1co-NZ-rkc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4247" y="1518"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Uo9-SD-Il3">
+            <objects>
+                <viewController id="x1I-nY-V88" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nQb-cJ-ocV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KC-2R-o6H" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="qCI-ie-I2o" kind="show" id="2q3-2h-xvh"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="FGJ-Bb-8iC">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86b-EX-qwu">
+                                <rect key="frame" x="46.000000000015916" y="-72.837095601847295" width="300" height="1000.0000000002271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">「わたしは、この辺りに人を訪ねて来ましたが、どこを探しても見当たらず、
+雪は降るし、日は暮れるし、やっとの事でここまでまいりました。
+ご迷惑でしょうが、どうか一晩泊めてくださいまし」
+娘は丁寧に、手をついて頼みました。
+
+「それはそれは、さぞ、お困りじゃろう。こんなところでよかったら、どうぞ、お泊まりなさい」
+「ありがとうございます」
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m6K-Aw-m7H"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WVq-eG-5pi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GoZ-pq-Ywl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4915" y="1526"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="voR-0J-8E3">
+            <objects>
+                <viewController id="qCI-ie-I2o" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NmZ-5H-zS5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7a-OA-vdD" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="haW-FY-jDV" kind="show" id="xKP-j6-Kch"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="ioW-P8-a7F">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKR-WJ-E9T">
+                                <rect key="frame" x="46.000000000015461" y="-73.822505700291913" width="300.00000000027239" height="1000.0000000002271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">あくる朝、おばあさんが目を覚ますと、娘はもう起きて働いていました。
+いろりには火が燃え、鍋からは湯気があがっています。
+そればかりか、家中がきれいに掃除されているのです。
+
+「まあ、まあ、ご飯ばかりか、お掃除までしてくれたのかね。ありがとう」
+次の日も、その次の日も大雪で、戸を開ける事も出来ません。
+娘は、おじいさんの肩をもんでくれました。
+「おお、おお、何て良く働く娘さんじゃ。何て良く気のつく優しい娘さんじゃ。こんな娘が家にいてくれたら、どんなにうれしいじゃろう」
+おじいさんとおばあさんは、顔を見合わせました。
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kf3-82-C4x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rFy-Gx-TRI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ea5-Ll-qzA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5578" y="1578"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UEF-PW-q7l">
+            <objects>
+                <viewController id="haW-FY-jDV" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xa1-jx-Z0s">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3U-ts-Oeg" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="oYr-Dn-xDr" kind="show" id="wXR-pj-kJu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="sCk-dP-9Y2">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktm-9T-P2M">
+                                <rect key="frame" x="45.999999999974534" y="-72.837095601617875" width="299.99999999972761" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">すると娘が、手をついて頼みました。
+「身寄りのない娘です。どうぞ、この家においてくださいませ」
+「おお、おお」
+「まあ、まあ」
+おじいさんとおばあさんは喜んで、それから三人貧しいけれど、楽しい毎日を過ごしました。
+
+さて、ある日の事。
+娘が機をおりたいから、糸を買ってくださいと頼みました。
+おじいさんが糸を買ってくると、娘は機の回りにびょうぶを立てて、
+「機をおりあげるまで、決してのぞかないでください」
+と、言って、機をおり始めました。
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VjW-LT-UXC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7qP-rp-KJU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E07-DX-Q9i" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6240" y="1542"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8ym-Gu-eN0">
+            <objects>
+                <viewController id="oYr-Dn-xDr" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p9R-AJ-UFr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="0UB-ac-Xc9">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evh-91-Cb6" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="MTX-9G-FR2" kind="show" id="NG3-Ve-erL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deI-eJ-Wda">
+                                <rect key="frame" x="45.999999999994088" y="-71.735830605607589" width="299.99999999999955" height="1000.0000000000005"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">キコバタトン、キコバタトン。
+娘が機をおって、三日がたちました。
+ようやく機をおり終えた娘は、
+「おじいさま、おばあさま、この綾錦を町へ売りに行って、帰りにはまた、糸を買って来て下さい」
+と、娘は空の雲の様に軽い、美しいおり物を二人に見せました。
+
+「これは、素晴らしい」
+おじいさんが町へ売りに行くと、それを殿さまが高い値段で買ってくれました。
+おじいさんは喜んで、糸を買って帰りました。
+すると娘はまた、機をおり始めました。
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8fU-cP-sM4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n78-hU-xjY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiQ-gK-Rnh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6966" y="1518"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HY8-Te-e34">
+            <objects>
+                <viewController id="MTX-9G-FR2" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qjq-Kx-hT3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTL-Pc-MDD" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="EKi-UT-Dxg" kind="show" id="hB4-pJ-bic"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="zQi-7a-nBz">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWJ-O1-76W">
+                                <rect key="frame" x="45.999999999993634" y="-73.286864709286874" width="300.00000000000045" height="1000.0000000000005"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">「ねえ、おじいさん。あの娘はいったいどうして、あんな見事な布をおるのでしょうね。ほんの少し、のぞいてみましょう」
+おばあさんがびょうぶのすきまからのぞいてみると、そこに娘はいなくて、やせこけた一羽のツルが長いくちばしで自分の羽毛を引き抜いては、糸にはさんで機をおっていたのです。
+
+「おじいさん、おじいさんや」
+おどろいたおばあさんは、おじいさんにこの事を話しました。
+キコバタトン、キコバタトン…
+機の音が止んで、前よりもやせ細った娘が布をかかえて出てきました。
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eYR-Ke-pcd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NvM-mJ-tXI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YbN-eA-2vS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7689" y="1523"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KV1-WZ-TqU">
+            <objects>
+                <viewController id="EKi-UT-Dxg" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="91X-gO-K3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0H-CW-rjg" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="WvF-z1-HxD" kind="show" id="qjh-OW-1lK"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tsurunoongaeshi" translatesAutoresizingMaskIntoConstraints="NO" id="n9U-V9-tW4">
+                                <rect key="frame" x="-33" y="36" width="566" height="1008"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbg-xv-Ee6">
+                                <rect key="frame" x="45.999999999974648" y="-77.833448126213852" width="299.99999999972749" height="999.99999999977285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">「おじいさま、おばあさま。もう、隠していても仕方ありませんね。
+わたしは、いつか助けられたツルでございます。
+ご恩をお返ししたいと思って娘になってまいりました。
+けれど、もうお別れでございます。
+どうぞ、いつまでもおたっしゃでいてくださいませ」
+
+そう言ったかと思うと、おじいさんとおばあさんが止めるのも聞かず、たちまち一羽のツルになって空へ舞い上がりました。
+そして家の上を、三ベん回って、
+「カウ、カウ、カウ」
+と、鳴きながら、山の向こうへ飛んで行ってしまいました。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oa9-af-WWS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VRF-In-0uZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifb-Ga-42A" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8373" y="1525"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WfF-cs-1Vi">
+            <objects>
+                <viewController id="zBL-Ih-obm" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K6y-K4-G0C">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rZ-MG-7ZU" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="241" width="393" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="zL7-vm-nPc" kind="show" id="ffT-lg-EbR"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monogatari_kasajizou" translatesAutoresizingMaskIntoConstraints="NO" id="hkE-fV-vV6">
+                                <rect key="frame" x="0.0" y="-250" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsq-58-bgx">
+                                <rect key="frame" x="39" y="-74" width="300" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">むかしむかし、あるところに、貧乏だけど心優しい、おじいさんとおばあさんがいました。  ある年の大晦日の事です。
+
+おじいさんとおばあさんは、二人でかさを作りました。 それを町へ持って行って売り、お正月のおもちを買うつもりです。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="http://hukumusume.com/douwa/english/jap/12/31_T.htm" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DeN-aQ-QfJ" userLabel="參考連結URL">
+                                <rect key="frame" x="254" y="650" width="85" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="參考連結" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lay-ZV-0jb">
+                                <rect key="frame" x="254" y="662" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eI3-Va-a7v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Qf-P8-ZNN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kaa-TY-lvC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3593" y="2321"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="amZ-Sq-TME">
+            <objects>
+                <viewController id="zL7-vm-nPc" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nx4-pO-PCK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cK-IJ-ZHr" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="V9h-On-mQ6" kind="show" id="Ddb-3T-Ihf"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="fwC-aO-0iR">
+                                <rect key="frame" x="0.0" y="0.0" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rju-p4-iVQ">
+                                <rect key="frame" x="46" y="-74" width="300" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">「かさは五つもあるから、もちぐらい買えるだろう」 
+「お願いしますね。それから今夜は雪になりますから、気をつけて下さいよ」 
+おじいさんは、五つのかさを持って出かけました。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k7n-Rh-uyw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RXv-xH-uxc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NmR-2N-Zpx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4300" y="2321"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ba0-e8-yfD">
+            <objects>
+                <viewController id="V9h-On-mQ6" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dVJ-8d-KEy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8R-Zh-1GR" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="cpU-Bt-ZMl" kind="show" id="WBt-DH-IdL"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="nAj-Vx-xp6">
+                                <rect key="frame" x="17" y="26" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdp-Oq-Xo9">
+                                <rect key="frame" x="46.000000000015916" y="-72.837095601847295" width="300" height="1000.0000000002271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">雪はだんだん激しくなったので、おじいさんはせっせと道を急ぎました。
+
+村はずれまで来ると、おじぞうさまが六つならんで立っています。 
+お地蔵さまの頭にも肩にも、雪が積もっています。 
+これを見たおじいさんは、そのまま通り過ぎる事が出来ませんでした。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lty-00-4m2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KfH-ea-GD9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcV-lw-krE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4967" y="2330"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gy9-78-fq2">
+            <objects>
+                <viewController id="cpU-Bt-ZMl" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ryQ-Ob-AaI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9X-HG-GM7" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="xnq-6U-Ec9" kind="show" id="tuX-AP-iaI"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="gVM-1R-W9g">
+                                <rect key="frame" x="17" y="26" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3k-vV-Po3">
+                                <rect key="frame" x="46.000000000015461" y="-73.822505700291913" width="300.00000000027239" height="1000.0000000002271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">「お地蔵さま。雪が降って寒かろうな。せめて、このかさをかぶってくだされ」 
+おじいさんはお地蔵さまに、売るつもりのかさをかぶせてやりました。
+
+でも、お地蔵さまは六つなのに、かさは五つしかありません。
+
+そこでおじいさんは自分のかさを脱いで、最後のお地蔵さまにかぶせてやりました。 </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YiS-u6-AoL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fSa-KD-TdT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Nl-iL-xE8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5631" y="2328"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="T6U-2u-Ade">
+            <objects>
+                <viewController id="xnq-6U-Ec9" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IB6-Cb-WlV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1w-gf-3lA" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="p6I-wA-byS" kind="show" id="ggX-oX-H6H"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="OV1-Ck-blS">
+                                <rect key="frame" x="17" y="26" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWA-gq-Xtv">
+                                <rect key="frame" x="45.999999999974534" y="-72.837095601617875" width="299.99999999972761" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">家へ帰ると、おばあさんがびっくりして言いました。
+
+「まあまあ、ずいぶん早かったですねぇ。それに、おじいさんのかさはどうしました？」 おじいさんは、お地蔵さまのことを話してやりました。
+
+「まあまあ、それは良い事をしましたねえ。おもちなんて、なくてもいいですよ」 おばあさんは、ニコニコして言いました。 </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="feI-ub-wlN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k6e-wD-x2J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxM-KF-5oN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6291" y="2345"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MJ3-Vy-aMt">
+            <objects>
+                <viewController id="p6I-wA-byS" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fK6-3g-4Do">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBe-OD-UUX" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="qdd-2m-ZPy" kind="show" id="pSq-Jn-wNg"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="5gu-NT-jqx">
+                                <rect key="frame" x="17" y="26" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-hv-qQ5">
+                                <rect key="frame" x="45.999999999994088" y="-71.735830605607589" width="299.99999999999955" height="1000.0000000000005"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">その夜、夜中だと言うのに、ふしぎな歌が聞こえてきました。
+
+じいさんの家はどこだ。 かさのお礼を、届けに来たぞ。 
+じいさんの家はどこだ。 かさのお礼を、届けに来たぞ。 
+歌声はどんどん近づいて、とうとうおじいさんの家の前まで来ると、 
+ズシーン！ 
+と、何かを置く音がして、そのまま消えてしまいました。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Mk-ht-RCI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="I4R-RL-YMH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQ2-8z-Ahb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7019" y="2345"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EVn-4g-nnJ">
+            <objects>
+                <viewController id="qdd-2m-ZPy" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7YY-XR-sju">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY0-za-Bwo" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="RGp-7K-teM" kind="show" id="lDF-X2-Cph"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fashion_kaburi_gasa" translatesAutoresizingMaskIntoConstraints="NO" id="nEb-xf-dXx">
+                                <rect key="frame" x="17" y="200" width="358" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="おじいさんがそっと戸を開けてみると、おじいさんのあげたかさをかぶったお地蔵さまの後ろ姿が見えました。  そして家の前には、お正月用のおもちやごちそうが山のように置いてありました。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQB-ga-LNW">
+                                <rect key="frame" x="45.999999999993634" y="-73.286864709286874" width="300.00000000000045" height="1000.0000000000005"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="參考連結" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-NB-XNR">
+                                <rect key="frame" x="269" y="747" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://www.sigure.tw/learn-japanese/reading/fairy-tale/tsuru-no-ongaeshi.php" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nQZ-BT-VxX" userLabel="參考連結URL">
+                                <rect key="frame" x="269" y="735" width="85" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ulK-QL-BeG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z3l-Xq-V3G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orN-zB-mCK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7741" y="2326"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xcP-2C-8hj">
+            <objects>
+                <viewController id="WvF-z1-HxD" customClass="ViewController" customModule="TheGratefulCrane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QAv-il-G7p">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNK-cq-eTS" userLabel="goToNextPage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="RGp-7K-teM" kind="show" id="GtE-r4-Gat"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="截圖 2023-08-09 下午8.05.47" translatesAutoresizingMaskIntoConstraints="NO" id="j2s-FF-uh4">
+                                <rect key="frame" x="0.0" y="290" width="450" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8p-Yk-0bO">
+                                <rect key="frame" x="45.999999999974648" y="-77.833448126213852" width="299.99999999972749" height="999.99999999977285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">「ツルや。いや、娘や。どうかお前も、たっしゃでいておくれ。今まで、ありがとう」
+おじいさんとおばあさんは、いつまでもいつまでもツルを見送りました。
+それからのち、二人は娘のおった布を売ったお金で幸せに暮らしました。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://www.sigure.tw/learn-japanese/reading/fairy-tale/tsuru-no-ongaeshi.php" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Eyt-bC-Is6" userLabel="參考連結URL">
+                                <rect key="frame" x="260" y="215" width="85" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="參考連結" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0l9-Z6-G0k">
+                                <rect key="frame" x="260" y="238" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ekI-YG-e6d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="77I-Tf-B4H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXm-uK-QR8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9132" y="1525"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QKe-FX-fYV"/>
+        <segue reference="lDF-X2-Cph"/>
+        <segue reference="oH5-Qa-2vm"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="bluebird_fired" width="400" height="305"/>
+        <image name="doc.on.clipboard.fill" catalog="system" width="112" height="128"/>
+        <image name="doc.text" catalog="system" width="115" height="128"/>
+        <image name="fashion_kaburi_gasa" width="400" height="329"/>
+        <image name="monogatari_kasajizou" width="600" height="212"/>
+        <image name="ojiisan_obaasan" width="393" height="400"/>
+        <image name="tsurunoongaeshi" width="735" height="684"/>
+        <image name="截圖 2023-08-09 下午8.05.47" width="1186" height="906"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
