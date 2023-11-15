@@ -14,6 +14,7 @@
 		2D7D481C2A6FDF8F007FFF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D481B2A6FDF8F007FFF34 /* Assets.xcassets */; };
 		2D7D481F2A6FDF8F007FFF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D481D2A6FDF8F007FFF34 /* LaunchScreen.storyboard */; };
 		2D7D48272A6FFF47007FFF34 /* crayon_1-1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D48262A6FFF47007FFF34 /* crayon_1-1.ttf */; };
+		2DB36A652B04EB4100B9FA8D /* japanese.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB36A632B04EB4100B9FA8D /* japanese.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2D7D481E2A6FDF8F007FFF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D7D48202A6FDF8F007FFF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D7D48262A6FFF47007FFF34 /* crayon_1-1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crayon_1-1.ttf"; sourceTree = "<group>"; };
+		2DB36A642B04EB4100B9FA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TheGratefulCrane/Base.lproj/japanese.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		2D7D48062A6FDF8D007FFF34 = {
 			isa = PBXGroup;
 			children = (
+				2DB36A632B04EB4100B9FA8D /* japanese.storyboard */,
 				2D7D48112A6FDF8D007FFF34 /* TheGratefulCrane */,
 				2D7D48102A6FDF8D007FFF34 /* Products */,
 			);
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB36A652B04EB4100B9FA8D /* japanese.storyboard in Resources */,
 				2D7D48272A6FFF47007FFF34 /* crayon_1-1.ttf in Resources */,
 				2D7D481F2A6FDF8F007FFF34 /* LaunchScreen.storyboard in Resources */,
 				2D7D481C2A6FDF8F007FFF34 /* Assets.xcassets in Resources */,
@@ -165,6 +169,14 @@
 				2D7D481E2A6FDF8F007FFF34 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2DB36A632B04EB4100B9FA8D /* japanese.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DB36A642B04EB4100B9FA8D /* Base */,
+			);
+			name = japanese.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
